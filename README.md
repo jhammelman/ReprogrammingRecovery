@@ -7,7 +7,14 @@ Folder contains methods for generating a consensus transcription factor motif da
 Folder contains scripts for performing motif enrichment using DREME, AME, HOMER, and KMAC. 
 
 ## data
-consensus_HOCOMOCOv11_core_MOUSE-affinityprop-handannotated.meme - consensus database of 107 motifs representing TF families in meme format
-consensus_HOCOMOCOv11_core_MOUSE-affinityprop-handannotated.motifs - consensus database of 107 motifs representing TF families in chan PWM format
-consensus_HOCOMOCOv11_core_MOUSE-affinityprop-mapping.txt - mapping of 356 transcription factors to 107 motif consensus families
-mouse_ensemble_tfs_from_lambertetal_isyes.unique.txt - list of ensemble mouse gene names of 1,374 transcription factors curated in Lambert et al., 2018.
+### consensus_HOCOMOCOv11_core_MOUSE-affinityprop-handannotated.meme
+consensus database of 107 motifs representing TF families in meme format
+
+### consensus_HOCOMOCOv11_core_MOUSE-affinityprop-handannotated.motifs
+consensus database of 107 motifs representing TF families in chan PWM format
+
+### consensus_HOCOMOCOv11_core_MOUSE-affinityprop-mapping.txt
+mapping of 356 transcription factors to 107 motif consensus families
+
+### mouse_ensemble_tfs_from_lambertetal_isyes.unique.txt
+list of ensemble mouse gene names of 1,374 transcription factors curated in Lambert et al., 2018.
