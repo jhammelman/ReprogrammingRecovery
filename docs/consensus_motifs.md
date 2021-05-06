@@ -1,6 +1,8 @@
 ## Consensus Mouse Motif 
 We generated and hand-annotated a consensus motif database of 107 transcription factor groups by clustering the HOCOMOCOv11 mouse database of 356 transcription factor motifs.
 
+![](/assets/consensus_database_method.png)
+
 The script to compute similarity and perform affinity propagation clustering of the motifs is available [here](https://github.com/jhammelman/ReprogrammingRecovery/blob/main/cluster_consensus_motifs/00_cluster_motifs.sh).
 
 We provide this database in the following formats: 
