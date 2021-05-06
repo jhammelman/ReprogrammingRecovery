@@ -1,6 +1,13 @@
-# ReprogrammingRecovery
+# Reprogramming Recovery
 
 ![](docs/assets/reprogramming_schematic.png)
+
+## Citation
+TODO
+
+## License
+TODO
+
 ## cluster_consensus_motifs
 Folder contains methods for generating a consensus transcription factor motif data base of 107 consensus motifs representing 356 motifs in the HOCOMOCOv11 core mouse database using the script 00_cluster_motifs.sh.
 
