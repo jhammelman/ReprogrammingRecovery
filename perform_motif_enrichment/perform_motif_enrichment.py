@@ -1,5 +1,8 @@
 #!/bin/env python
-
+# Script for performing motif
+# enrichment from mouse epigenomic data
+# using KMAC, DREME, AME, and HOMER
+# tested on Ubuntu 18.04.3
 
 import argparse
 import subprocess
@@ -19,11 +22,26 @@ ame_database_consensus = (
 parser = argparse.ArgumentParser()
 parser.add_argument("bedfile")
 parser.add_argument("-o", "--outfile", required=True)
-parser.add_argument("-p", "--percent", default=0, type=int)
-parser.add_argument("-n", "--topN", default=10000, type=int)
-parser.add_argument("-db", "--database", default="all", choices=["all", "consensus"])
-parser.add_argument("-bg", "--background", default="default")
-parser.add_argument("-c", "--sortcol", type=int, default=8)
+parser.add_argument("-p", "--percent", default=0, type=int,
+                    help="percent of input peaks to use for motif enrichment")
+parser.add_argument("-n", "--topN", default=10000, type=int,
+                    help="number of input peaks to use for motif enrichment")
+parser.add_argument(
+    "-db", "--database", default="all", choices=["all", "consensus"],
+    help="choice of all HOCOMOCOv11 mouse motifs or consensus database"
+)
+parser.add_argument(
+    "-bg", "--background", default="default",
+    help="choice of negative (control) sequences for discriminative "+
+    "motif discovery options are method-specific default, "
+    + "homer-matched sample gc content matched sequences "
+    + "or passed fasta for custom background sequences"
+)
+parser.add_argument(
+    "-c", "--sortcol", type=int, default=8,
+    help="column to use for sorting and selecting top sequences "
+    + "default is p-value column for MACS2 narrowPeak formatted bed file"
+)
 parser.add_argument("-ame", "--ame", default=False, action="store_true")
 parser.add_argument("-meme", "--meme", default=False, action="store_true")
 parser.add_argument("-kmac", "--kmac", default=False, action="store_true")
@@ -122,7 +140,6 @@ if opts.background == "homer-matched":
 
 
 if opts.ame:
-    print(opts.background)
     if opts.background == "default":
         subprocess.call(
             [
@@ -248,7 +265,8 @@ if opts.kmac:
     subprocess.call([cmd], shell=True)
 
 if opts.homer:
-    if opts.background == "default" or opts.background == "homer-matched":
+    if (opts.background == "default" or
+        opts.background == "homer-matched"):
         cmd = (
             homer_path
             + "findMotifsGenome.pl "
