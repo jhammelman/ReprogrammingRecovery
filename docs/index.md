@@ -8,9 +8,11 @@ We generated several resources in this project that are useful to the community.
 
 - [Mouse Consensus Motif Database](./consensus_motifs.md)
 
-- [Mouse Shared Enhancers](./shared_enhancers.md)
+- [Mouse Multi-tissue Enhancers](./shared_enhancers.md)
 
 - [Mouse Transcription Factors](./mouse_tf_list.md)
+
+- [Mouse Motif Enrichment](./perform_motif_enrichment.md)
 
 ### Citation
 
