@@ -2,10 +2,9 @@
 
 ![](docs/assets/reprogramming_schematic.png)
 
-## Citation
-TODO
+## This git repo contains code and data and the [website](https://cgs.csail.mit.edu/ReprogrammingRecovery/) supporting the paper "Ranking Reprogramming Factors for Directed Differentiation."
 
-## License
+## Citation
 TODO
 
 ## cluster_consensus_motifs
