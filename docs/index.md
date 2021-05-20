@@ -18,4 +18,6 @@ We generated several resources in this project that are useful to the community.
 
 ### Citation
 
-Citation information forthcoming.
+Ranking Reprogramming Factors for Directed Differentiation\
+Jennifer Hammelman, Tulsi Patel, Michael Closser, Hynek Wichterle, David Gifford\
+bioRxiv 2021.05.14.444080; doi: https://doi.org/10.1101/2021.05.14.444080 
