@@ -5,7 +5,9 @@
 ## This git repo contains code and data and the [website](https://cgs.csail.mit.edu/ReprogrammingRecovery/) supporting the paper "Ranking Reprogramming Factors for Directed Differentiation."
 
 ## Citation
-TODO
+[Ranking Reprogramming Factors for Directed Differentiation](https://www.biorxiv.org/content/10.1101/2021.05.14.444080v2)
+Jennifer Hammelman, Tulsi Patel, Michael Closser, Hynek Wichterle, David Gifford
+bioRxiv 2021.05.14.444080; doi: https://doi.org/10.1101/2021.05.14.444080 
 
 ## cluster_consensus_motifs
 Folder contains methods for generating a consensus transcription factor motif data base of 107 consensus motifs representing 356 motifs in the HOCOMOCOv11 core mouse database using the script 00_cluster_motifs.sh.
