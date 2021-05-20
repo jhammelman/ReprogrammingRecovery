@@ -5,8 +5,8 @@
 ## This git repo contains code and data and the [website](https://cgs.csail.mit.edu/ReprogrammingRecovery/) supporting the paper "Ranking Reprogramming Factors for Directed Differentiation."
 
 ## Citation
-[Ranking Reprogramming Factors for Directed Differentiation](https://www.biorxiv.org/content/10.1101/2021.05.14.444080v2)
-Jennifer Hammelman, Tulsi Patel, Michael Closser, Hynek Wichterle, David Gifford
+[Ranking Reprogramming Factors for Directed Differentiation](https://www.biorxiv.org/content/10.1101/2021.05.14.444080v2)\
+Jennifer Hammelman, Tulsi Patel, Michael Closser, Hynek Wichterle, David Gifford\
 bioRxiv 2021.05.14.444080; doi: https://doi.org/10.1101/2021.05.14.444080 
 
 ## cluster_consensus_motifs
