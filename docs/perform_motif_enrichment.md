@@ -28,7 +28,7 @@ cd perform_motif_enrichment
 python perform_motif_enrichment.py -h
 ```
 
-## Run on example data
+### Run on example data
 We will show an example of how to use our script to run all four motif discovery methods on accessibility data from dopaminergic midbrain neurons. Download example [MACS2 peak file](http://reprogramdata.csail.mit.edu/atac/peaks/DP_MB-dopaminergic_rep1-threshold0.01.filt.narrowPeak.gz). Then to perform motif enrichment on the top 500 peaks with multitissue enhancer background sequences:
 ```
 python perform_motif_enrichment.py DP_MB-dopaminergic_rep1-threshold0.01.filt.narrowPeak.gz -db all -bg ../data/mm10_shared_enhancers.fa -n 500 -ame -homer -meme -kmac -o MB-dopaminergic
