@@ -53,8 +53,7 @@ if ".gz" in opts.bedfile:
         [
             "zcat "
             + opts.bedfile
-            + " | sort -k1,1 -k2,2n | bedtools groupby -i "
-            + opts.bedfile
+            + " | sort -k1,1 -k2,2n | bedtools groupby -i -"
             + " -grp 1,2,3 -c "
             + str(opts.sortcol)
             + " -o max > "
@@ -68,8 +67,7 @@ else:
         [
             "cat "
             + opts.bedfile
-            + " | sort -k1,1 -k2,2n | bedtools groupby -i "
-            + opts.bedfile
+            + " | sort -k1,1 -k2,2n | bedtools groupby -i -"
             + " -grp 1,2,3 -c "
             + str(opts.sortcol)
             + " -o max > "
